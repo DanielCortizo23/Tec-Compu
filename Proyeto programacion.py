@@ -36,8 +36,9 @@ else:
     print("Gracias por tu visita. ¡Vuelve pronto!")
 
 
-
+"en mi python si me corrio el programa"
 
     
+
 
 
