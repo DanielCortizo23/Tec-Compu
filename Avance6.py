@@ -7,7 +7,7 @@ def mostrar_menu(paellas):
         ingredientes = paella[2]
 
         print((i),(nombre),  (precio),"MXN")
-        print("   Ingredientes:", ingredientes)
+        print("Ingredientes:", ingredientes)
         print()
         i = i + 1
 
@@ -68,6 +68,7 @@ if respuesta == "si":
 
 else:
     print("Gracias por tu visita. ¡Vuelve pronto!")
+
 
 
 
