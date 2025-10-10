@@ -7,7 +7,7 @@ def mostrar_menu(paellas):
         ingredientes = paella[2]
 
         print((i),(nombre),  (precio),"MXN")
-        print("Ingredientes:", ingredientes)
+        print("   Ingredientes:", ingredientes)
         print()
         i = i + 1
 
@@ -25,12 +25,12 @@ def calcular_total(subtotal):
 
 
 
-paella1 = ["Paella Mixta", 395, "costilla, pollo, butifarra, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"]
-paella2 = ["Paella Marinera", 545, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"]
-paella3 = ["Paella Negra", 495, "camarones jumbo, calamar, mejillones, alioli"]
-paella4 = ["Paella Especial", 695, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo, vieiras"]
 
-paellas = [paella1, paella2, paella3, paella4]
+paellas = [["Paella Mixta", 395, "costilla, pollo, butifarra, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"],
+["Paella Marinera", 545, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"],
+["Paella Negra", 495, "camarones jumbo, calamar, mejillones, alioli"],
+["Paella Especial", 695, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo, vieiras"]
+]
 
 
 print("Bienvenido a Delantal Iberico")
@@ -68,7 +68,3 @@ if respuesta == "si":
 
 else:
     print("Gracias por tu visita. ¡Vuelve pronto!")
-
-
-
-
