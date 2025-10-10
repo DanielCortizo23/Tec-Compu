@@ -12,3 +12,5 @@ No entendi lo de subir el py, me imagino que es ir subiendo diferentes .py del a
 Avance 5: estoy cambiando los datos de el tamaño, por cantidad de personas por ordenes, paa lugares que ocupen 15 25 o asi, y los precios luego los voy a modificar y agruege while
 
 Avance 6: cambie un poco todo, puse por paellas precio y que pueda elegir para cuantas perosonas, y agregue listas 
+
+Avance 7: solo hice una lista anidada para las paellas y no tener muchas listas por ahi 
