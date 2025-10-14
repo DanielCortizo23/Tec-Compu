@@ -1,4 +1,8 @@
 def mostrar_menu(paellas):
+    """
+    Esta funcion sirve para mostrar el menu de las paellas,
+    junto con el precio y los ingredientes
+    """
     print("\n--- Menú de Paellas ---")
     i = 1  
     for paella in paellas:
@@ -13,6 +17,11 @@ def mostrar_menu(paellas):
 
 
 def calcular_subtotal(precio_paella, cantidad):
+    """
+    Esta funcion me ayuda a calcular el total
+    dependiendo de la cantidad de paella que quiera
+    con el precio de cada una
+    """
     if cantidad <= 0:
         print("La cantidad mínima es 1. Se pondrá 1.")
         cantidad = 1
@@ -20,17 +29,26 @@ def calcular_subtotal(precio_paella, cantidad):
 
 
 def calcular_total(subtotal):
+    """
+    Esta funcion calcula el total con iva
+    """
     iva = subtotal * 0.16
     return subtotal + iva
 
 
-
+"""
+======================================    Esta es la matriz de las paellas     ==================================================== 
+"""
 
 paellas = [["Paella Mixta", 395, "costilla, pollo, butifarra, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"],
 ["Paella Marinera", 545, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo"],
 ["Paella Negra", 495, "camarones jumbo, calamar, mejillones, alioli"],
 ["Paella Especial", 695, "lomo de merluza, pulpo, almejas, mejillones, calamar, camarón pacotilla, camarón jumbo, vieiras"]
 ]
+
+"""
+======================================    Codigo principal del programa     ==================================================== 
+"""
 
 
 print("Bienvenido a Delantal Iberico")
@@ -58,13 +76,18 @@ if respuesta == "si":
 
     subtotal = calcular_subtotal(precio_paella, cantidad)
     total = calcular_total(subtotal)
-
+    
     print("\n--- Resumen del Pedido ---")
     print("Paella elegida:", nombre_paella)
     print("Cantidad de órdenes:", cantidad)
     print("Ingredientes:", ingredientes)
     print("Subtotal:", subtotal, "MXN")
     print("Total con IVA (16%):", total, "MXN")
+    print("Gracias por tu compra, vuelva pronto!!")
 
 else:
-    print("Gracias por tu visita. ¡Vuelve pronto!")
+    print("Muchas gracias por su visita")
+
+"""
+======================================    Fin del programa    ==================================================== 
+"""  
