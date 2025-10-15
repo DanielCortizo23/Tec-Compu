@@ -7,6 +7,7 @@ Hacer una pagina web o aplicacion, para ayudar a mejorar las ventas y eventos de
 Consiste en vender paellas o ir al evento y ofrecer un servicio ya ahi
 
 Algoritmo: 
+
 """
 Algoritmo
 
