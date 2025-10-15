@@ -11,14 +11,16 @@ def menu(paellas):
     obtener el indice y el valor de cada elemento
     """
     print("\n------------- Menu de Paellas -------------")
-
-    for i, paella in enumerate(paellas, start=1):
+    i = 1
+    for paella in paellas:
         nombre = paella[0]
         precio = paella[1]
         ingredientes = paella[2]
 
         print(i, nombre, precio, "MXN")
         print("Ingredientes: ", ingredientes)
+        i += 1
+        
 
 
 def c_subtotal(precio_paella, cantidad):
@@ -129,4 +131,5 @@ else:
 """
 =============================   Fin del programa    =================
 """
+
 
