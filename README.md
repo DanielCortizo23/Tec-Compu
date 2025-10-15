@@ -1,4 +1,4 @@
-TC1028 Proyecti de Venta de Paellas Online
+TC1028 Proyecto de Venta de Paellas Online
 
 Daniel Cortizo
 
