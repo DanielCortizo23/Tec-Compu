@@ -1,11 +1,17 @@
+"""
+
 def menu(paellas):
     """
     Esta funcion sirve para mostrar el menu de las paellas,
-    junto con el precio y los ingredientes
+    junto con el precio y los ingredientes.
+
+    Aqui usea enumerate que es algo que vi yo,
+    sirve para recorrer una secuencia y al mismo tiempo
+    obtener el indice y el valor de cada elemento
     """
     print("\n------------- Menu de Paellas -------------")
-    i = 1
-    for paella in paellas:
+   
+    for i, paella in enumerate(paellas, start=1):
         nombre = paella[0]
         precio = paella[1]
         ingredientes = paella[2]
@@ -19,7 +25,7 @@ def c_subtotal(precio_paella, cantidad):
     """
     Esta funcion me ayuda a calcular el total
     dependiendo de la cantidad de paella que quiera
-    con el precio de cada una
+    con el precio de cada una.
     """
     if cantidad <= 0:
         print("La cantidad minima es 1. Se pondra 1.")
@@ -29,7 +35,7 @@ def c_subtotal(precio_paella, cantidad):
 
 def c_total(subtotal):
     """
-    Esta funcion calcula el total con iva
+    Esta funcion calcula el total con iva.
     """
     iva = subtotal * 0.16
     return subtotal + iva
@@ -116,4 +122,5 @@ else:
 """
 ======================================    Fin del programa    ==================================================== 
 """  
+
 
