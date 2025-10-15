@@ -1,4 +1,19 @@
 """
+Algoritmo
+
+Inicio
+Quieres comprar paella
+Respuesta si entonces ofrecer estilo de paella, tamaño y ingredientes
+Pedir al usuario que llene los datos de como quiere la paella
+Quieres hacer el pedido
+Respuesta si etonces pedir datos del usario = crear cuenta, 
+pedir metodo de pago
+Respuesta no entonces regresar a pedir los datos de la paella
+Respuesta no entonces ofrecer servicio a eventos
+Respuesta si entoces dar horarios y ubicacion
+Pedir crear cuenta y dar datos de ubicacion
+Respuesta no regresar a la pagina de inico 
+"""
 
 def menu(paellas):
     """
@@ -16,7 +31,7 @@ def menu(paellas):
         precio = paella[1]
         ingredientes = paella[2]
 
-        print(i, nombre, precio, "MXN")
+        print(i, nombre,precio, "MXN")
         print("Ingredientes: ", ingredientes)
         i += 1
 
@@ -34,14 +49,12 @@ def c_subtotal(precio_paella, cantidad):
     
 
 def c_total(subtotal):
-    """
-    Esta funcion calcula el total con iva.
-    """
+    """Esta funcion calcula el total con iva."""
     iva = subtotal * 0.16
     return subtotal + iva
 
 """
-======================================    Esta es la matriz de las paellas     ==================================================== 
+=============    Esta es la matriz de las paellas     ===============
 """
 
 paellas = [["Paella Mixta", 395,
@@ -59,7 +72,7 @@ paellas = [["Paella Mixta", 395,
 ]
 
 """
-======================================    Codigo principal del programa     ==================================================== 
+================   Codigo principal del programa     =============
 """
 
 print("Bienvenido a delantal Iberico")
@@ -81,17 +94,17 @@ if r == "si":
     nombre_paella, precio_paella, ingredientes = paellas[o-1]
 
     c = input(f"Elegiste: {nombre_paella}. Es correcto? (si/no): ")
-    while c not in ["si", "no"]:
-        c = input("Respuesta no aceptada. Porfa escriba 'si' o 'no'. ")
+    while c not in ["si","no"]:
+        c = input("Respuesta erronea. Porfa escriba 'si' o 'no'. ")
 
     if c == "no":
         print("Pedido cancelado.")
         exit()
 
-    cantidad = int(input(f"\nCuantas ordenes de {nombre_paella} quieres? "))
-    c = input(f"Elegiste {cantidad} esta cantidad de orden/es es correcta (si/no): ")
+    cantidad = int(input(f"\nOrdenes de, {nombre_paella} quieres? "))
+    c = input(f"Elegiste {cantidad} orden/es. Es correcto?(si/no): ")
     while c not in ["si", "no"]:
-         c = input("Respuesta no aceptada. Porfa escriba 'si' o 'no'. ")
+         c = input("Respuesta erronea. Porfa escriba 'si' o 'no'. ")
 
     if c == "no":
         print("Pedido cancelado.")
@@ -109,10 +122,10 @@ if r == "si":
 
     c = input("\n Confirmacion del pedido (si/no): ")
     while c not in ["si", "no"]:
-        c = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
+        c = input("Respuesta erronea. Porfavor escriba 'si' o 'no'. ")
 
     if c == "si":
-        print("\nMuchas gracias por comprar con nosotros, vuelva pronto!!")
+        print("\nMuchas gracias por comprar, vuelva pronto!!")
     else:
         print("Pedido cancelado. Gracias por su visita!")
         
@@ -120,7 +133,6 @@ else:
     print("Para que se mete si no va a comprar")
 
 """
-======================================    Fin del programa    ==================================================== 
+=============================   Fin del programa    =================
 """  
-
 
