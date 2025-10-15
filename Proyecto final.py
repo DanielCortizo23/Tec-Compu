@@ -58,36 +58,36 @@ paellas = [["Paella Mixta", 395,
 
 print("Bienvenido a delantal Iberico")
 
-respuesta = input("Te gustaria comprar una paella? (si/no): ")
+r = input("Te gustaria comprar una paella? (si/no): ")
 
-while respuesta not in ["si", "no"]:
+while r not in ["si", "no"]:
     print("Respuesta no aceptada. Porfavor escriba 'si' o 'no'.")
-    respuesta = input("Te gustaria comprar una paella? (si/no): ")
+    r = input("Te gustaria comprar una paella? (si/no): ")
 
-if respuesta == "si":
+if r == "si":
     menu(paellas)
 
-    opcion = int(input("\nElige el numero de paella que desea pedir: "))
-    while opcion < 1 or opcion > len(paellas):
+    o = int(input("\nElige el numero de paella que desea pedir: "))
+    while o < 1 or o > len(paellas):
         print("Porfavor eliga entre las 4 paellas que tenemos.")
-        opcion = int(input("Elige el numero de paella que desea pedir: "))
+        o = int(input("Elige el numero de paella que desea pedir: "))
 
-    nombre_paella, precio_paella, ingredientes = paellas[opcion-1]
+    nombre_paella, precio_paella, ingredientes = paellas[o-1]
 
-    confirmar = input(f"Elegiste: {nombre_paella}. Es correcto? (si/no): ")
-    while confirmar not in ["si", "no"]:
-        confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
+    c = input(f"Elegiste: {nombre_paella}. Es correcto? (si/no): ")
+    while c not in ["si", "no"]:
+        c = input("Respuesta no aceptada. Porfa escriba 'si' o 'no'. ")
 
-    if confirmar == "no":
+    if c == "no":
         print("Pedido cancelado.")
         exit()
 
     cantidad = int(input(f"\nCuantas ordenes de {nombre_paella} quieres? "))
-    confirmar = input(f"Elegiste {cantidad} orden(es). Es correcto? (si/no): ")
-    while confirmar not in ["si", "no"]:
-         confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
+    c = input(f"Elegiste {cantidad} esta cantidad de orden/es es correcta (si/no): ")
+    while c not in ["si", "no"]:
+         c = input("Respuesta no aceptada. Porfa escriba 'si' o 'no'. ")
 
-    if confirmar == "no":
+    if c == "no":
         print("Pedido cancelado.")
         exit()
 
@@ -101,12 +101,12 @@ if respuesta == "si":
     print("Subtotal:", subtotal, "MXN")
     print("Total final con IVA (16%):", total, "MXN")
 
-    confirmar = input("\n Confirmacion del pedido (si/no): ")
-    while confirmar not in ["si", "no"]:
-        confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
+    c = input("\n Confirmacion del pedido (si/no): ")
+    while c not in ["si", "no"]:
+        c = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
 
-    if confirmar == "si":
-        print("Muchas gracias por comprar con nosotros, vuelva pronto!!")
+    if c == "si":
+        print("\nMuchas gracias por comprar con nosotros, vuelva pronto!!")
     else:
         print("Pedido cancelado. Gracias por su visita!")
         
