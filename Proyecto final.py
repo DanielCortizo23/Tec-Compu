@@ -1,40 +1,38 @@
-def mostrar_menu(paellas):
+def menu(paellas):
     """
     Esta funcion sirve para mostrar el menu de las paellas,
     junto con el precio y los ingredientes
     """
-    print("\n--- Menú de Paellas ---")
-    i = 1  
+    print("\n------------- Menu de Paellas -------------")
+    i = 1
     for paella in paellas:
         nombre = paella[0]
         precio = paella[1]
         ingredientes = paella[2]
 
-        print(i, nombre,  precio,"MXN")
-        print("   Ingredientes:", ingredientes)
-        print()
-        i = i + 1
+        print(i, nombre, precio, "MXN")
+        print("Ingredientes: ", ingredientes)
+        i += 1
 
 
-def calcular_subtotal(precio_paella, cantidad):
+def c_subtotal(precio_paella, cantidad):
     """
     Esta funcion me ayuda a calcular el total
     dependiendo de la cantidad de paella que quiera
     con el precio de cada una
     """
     if cantidad <= 0:
-        print("La cantidad mínima es 1. Se pondrá 1.")
+        print("La cantidad minima es 1. Se pondra 1.")
         cantidad = 1
     return precio_paella * cantidad
+    
 
-
-def calcular_total(subtotal):
+def c_total(subtotal):
     """
     Esta funcion calcula el total con iva
     """
     iva = subtotal * 0.16
     return subtotal + iva
-
 
 """
 ======================================    Esta es la matriz de las paellas     ==================================================== 
@@ -42,78 +40,78 @@ def calcular_total(subtotal):
 
 paellas = [["Paella Mixta", 395,
             "costilla, pollo, butifarra, almejas, mejillones,"
-            "calamar, camarón pacotilla, camarón jumbo"],
+            "calamar, camaron pacotilla, camaron jumbo"],
             ["Paella Marinera", 545,
              "lomo de merluza, pulpo, almejas, mejillones,"
-             "calamar, camarón pacotilla, camarón jumbo"],
-            ["Paella Negra", 495,
-             "camarones jumbo, calamar, mejillones, alioli"],
-            ["Paella Especial", 695,
-             "lomo de merluza, pulpo, almejas, mejillones, calamar,"
-             "camarón pacotilla, camarón jumbo, vieiras"]
+             "calamar, camaron pacotilla, camaron jumbo"],
+             ["Paella Negra", 495,
+              "camarones jumbo, calamar, mejillones, alioli"],
+              ["Paella Especial", 695,
+               "lomo de merluza, pulpo, almejas, mejillones, calamar,"
+               "camaron pacotilla, camaron jumbo, vieiras"]
+               
 ]
 
 """
 ======================================    Codigo principal del programa     ==================================================== 
 """
 
+print("Bienvenido a delantal Iberico")
 
-print("Bienvenido a Delantal Iberico")
-
-respuesta = input("¿Quieres comprar paella? (si/no): ")
+respuesta = input("Te gustaria comprar una paella? (si/no): ")
 
 while respuesta not in ["si", "no"]:
-    print("Respuesta no válida. Escribe 'si' o 'no'.")
-    respuesta = input("¿Quieres comprar paella? (si/no): ")
+    print("Respuesta no aceptada. Porfavor escriba 'si' o 'no'.")
+    respuesta = input("Te gustaria comprar una paella? (si/no): ")
 
 if respuesta == "si":
-    mostrar_menu(paellas)
+    menu(paellas)
 
-    opcion = int(input("Elige el número de la paella que deseas: "))
+    opcion = int(input("\nElige el numero de paella que desea pedir: "))
     while opcion < 1 or opcion > len(paellas):
-        print("Opción no válida.")
-        opcion = int(input("Elige el número de la paella que deseas: "))
+        print("Porfavor eliga entre las 4 paellas que tenemos.")
+        opcion = int(input("Elige el numero de paella que desea pedir: "))
 
-    nombre_paella, precio_paella, ingredientes = paellas[opcion - 1]
+    nombre_paella, precio_paella, ingredientes = paellas[opcion-1]
 
-    confirmar = input(f"Elegiste '{nombre_paella}'. ¿Es correcto? (si/no): ")
+    confirmar = input(f"Elegiste: {nombre_paella}. Es correcto? (si/no): ")
     while confirmar not in ["si", "no"]:
-        confirmar = input("Respuesta no válida. Escribe 'si' o 'no': ")
+        confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
 
     if confirmar == "no":
-        print("Operación cancelada.")
+        print("Pedido cancelado.")
         exit()
 
-    cantidad = int(input(f"¿Cuántas órdenes de '{nombre_paella}' quieres? "))
-    confirmar = input(f"Elegiste {cantidad} orden(es). ¿Es correcto? (si/no): ")
+    cantidad = int(input(f"\nCuantas ordenes de {nombre_paella} quieres? "))
+    confirmar = input(f"Elegiste {cantidad} orden(es). Es correcto? (si/no): ")
     while confirmar not in ["si", "no"]:
-        confirmar = input("Respuesta no válida. Escribe 'si' o 'no': ")
+         confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
 
     if confirmar == "no":
-        print("Operación cancelada.")
+        print("Pedido cancelado.")
         exit()
 
-    subtotal = calcular_subtotal(precio_paella, cantidad)
-    total = calcular_total(subtotal)
+    subtotal = c_subtotal(precio_paella, cantidad)
+    total = c_total(subtotal)
 
-    print("\n--- Resumen del Pedido ---")
+    print("\n-- Resumen del Pedido ---")
     print("Paella elegida:", nombre_paella)
-    print("Cantidad de órdenes:", cantidad)
-    print("Ingredientes:", ingredientes)
+    print("Numero de ordenes solicitadas:", cantidad)
+    print("Ingredientes de la paella:", ingredientes)
     print("Subtotal:", subtotal, "MXN")
-    print("Total con IVA (16%):", total, "MXN")
+    print("Total final con IVA (16%):", total, "MXN")
 
-    confirmar = input("\n¿Deseas realizar el pedido? (si/no): ")
+    confirmar = input("\n Confirmacion del pedido (si/no): ")
     while confirmar not in ["si", "no"]:
-        confirmar = input("Respuesta no válida. Escribe 'si' o 'no': ")
+        confirmar = input("Respuesta no aceptada. Porfavor escriba 'si' o 'no'. ")
 
     if confirmar == "si":
-        print("Gracias por tu compra, vuelva pronto!!")
+        print("Muchas gracias por comprar con nosotros, vuelva pronto!!")
     else:
-        print("Pedido cancelado. ¡Gracias por tu visita!")
-
+        print("Pedido cancelado. Gracias por su visita!")
+        
 else:
-    print("Muchas gracias por su visita")
+    print("Para que se mete si no va a comprar")
 
 """
 ======================================    Fin del programa    ==================================================== 
