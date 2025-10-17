@@ -26,5 +26,4 @@ Respuesta no regresar a la pagina de inico
 """
 
 Aprendido afuera: 
-    Use enumerate que es algo que vi yo, sirve para recorrer una secuencia y al mismo tiempo obtener el indice y el valor de cada elemento. La usea en la funcion de menu de paellas
-    para leer la matriz mas facil sin hacer uso de una variable de i
+ Importe 3 bibliotecas, random, time y math para que me ayudaran a hacer mas entretenido mi proyecto y bonito  
