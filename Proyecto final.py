@@ -10,9 +10,9 @@ def menu(paellas):
 
     Aqui use enumerate que es algo que vi yo,
     sirve para recorrer una secuencia y al mismo tiempo
-    obtener el indice y el valor de cada elemento
+    obtener el indice y el valor de cada elemento.
     """
-    print("\n------------- Menu de Paellas -------------")
+    print("\n------------- Menu de Paellas. -------------")
     i = 1
     for paella in paellas:
         nombre = paella[0]
@@ -44,7 +44,7 @@ def c_total(subtotal):
 
 
 """
-=============    Esta es la matriz de las paellas     ===============
+=============    Esta es la matriz de las paellas.     ===============
 """
 
 paellas = [["Paella Mixta", 465,
@@ -62,7 +62,7 @@ paellas = [["Paella Mixta", 465,
            ]
 
 """
-================   Codigo principal del programa     =============
+================   Codigo principal del programa.     =============
 """
 
 print("Bienvenido a delantal Iberico")
@@ -155,8 +155,9 @@ while True:
 
 
 """
-=============================   Fin del programa    =================
+=============================   Fin del programa.    =================
 """
+
 
 
 
