@@ -48,5 +48,8 @@ Aprendido afuera:
 Instrucciones: 
 Descargar el archivo 
 Correr en terminal con python Proyecto.py
-o abrir en Visual y dar boton de play.
+
+Aqui puedes descargar el proyecto:
 [Proyecto.py](https://github.com/user-attachments/files/23028761/Proyecto.py)
+
+o abrir en Visual y dar boton de play.
