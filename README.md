@@ -44,3 +44,9 @@ Aprendido afuera:
  Importe 3 bibliotecas, random, time y math, usea random para dar un descuento sorpresa en todos los pedidos, use time 
  para hacer que imprima poco a poco los prints, y no sea todo instantaneo y por ultimo usea math para hacer unas operaciones
  basicas
+
+Instrucciones: 
+Descargar el archivo 
+Correr en terminal con python Proyecto.py
+o abrir en Visual y dar boton de play.
+[Proyecto.py](https://github.com/user-attachments/files/23028761/Proyecto.py)
