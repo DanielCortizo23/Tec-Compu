@@ -12,17 +12,28 @@ Algoritmo:
 Algoritmo
 
 Inicio
-Quieres comprar paella
-Respuesta si entonces ofrecer estilo de paella, tamaño y ingredientes
-Pedir al usuario que llene los datos de como quiere la paella
-Quieres hacer el pedido
-Respuesta si etonces pedir datos del usario = crear cuenta, 
-pedir metodo de pago
-Respuesta no entonces regresar a pedir los datos de la paella
-Respuesta no entonces ofrecer servicio a eventos
-Respuesta si entoces dar horarios y ubicacion
-Pedir crear cuenta y dar datos de ubicacion
-Respuesta no regresar a la pagina de inico 
+Quieres comprar paella.
+
+Respuesta si entonces ofrecer estilo de paella, tamaño y ingredientes.
+
+Pedir al usuario que llene los datos de como quiere la paella.
+
+Quieres hacer el pedido.
+
+Respuesta si etonces pedir datos del usario = crear cuenta.
+
+pedir metodo de pago.
+
+Respuesta no entonces regresar a pedir los datos de la paella.
+
+Respuesta no entonces ofrecer servicio a eventos.
+
+Respuesta si entoces dar horarios y ubicacion.
+
+Pedir crear cuenta y dar datos de ubicacion.
+
+Respuesta no regresar a la pagina de inico.
+
 """
 
 Mi codigo, es un intento, de pagina web, que te pide realizar un pedido con diferentes tipos de paellas y ordenes, usando 
