@@ -1,8 +1,12 @@
-Sub-Competencia: bibliotecas y while
+Sub-Competencia: 
+bibliotecas y while
 
-Error original: solo fueron cambios y agregar las bibliotecas
+Error original: 
+solo fueron cambios y agregar las bibliotecas
 
-Cambio realizado: agruege 3 bibliotecas, cambie los whiles para hacer que el usuario pudiera hacer mas pedidos
+Cambio realizado: 
+agruege 3 bibliotecas, cambie los whiles para hacer que el usuario pudiera hacer mas pedidos
 y hize que el usuario comprovara si lo que habia elejido estaba bien 
 
-Líneas de código donde se ve la corrección: 
+Líneas de código donde se ve la corrección:
+7,8,9,89,121,122,157 y agregue time en para casi todos los prints
