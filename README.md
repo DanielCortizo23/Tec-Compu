@@ -13,7 +13,7 @@ independiente del anterior.
 
 
 ## Algoritmo
-
+Nota: No segui al 100% este algoritmo, pero si lo use de base
 Inicio
 Quieres comprar paella.
 
