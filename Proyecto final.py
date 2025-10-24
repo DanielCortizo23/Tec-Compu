@@ -1,3 +1,9 @@
+"""
+Proyecto Computacion:
+Venta de paellas online
+"""
+
+
 import math
 import random
 import time
@@ -157,6 +163,7 @@ while True:
 """
 =============================   Fin del programa.    =================
 """
+
 
 
 
